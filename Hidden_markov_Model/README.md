@@ -19,7 +19,7 @@ This module implements a Hidden Markov Model (HMM) using the Baum-Welch algorith
 
 ### 1. Compile the Program
 ```bash
-gcc hmm.c -o hmm -lm
+gcc model.c -o model -lm
 ```
 
 ### 2. Prepare Your Data
@@ -30,14 +30,14 @@ Ensure your CSV file follows this format:
 ```
 
 ### 3. Update Data Path
-Edit line ~80 in `hmm.c` to point to your data file:
+Edit line ~80 in `model.c` to point to your data file:
 ```c
 if (read_stock_data("../data/your_data.csv", stock_prices, &num_periods) != 0) {
 ```
 
 ### 4. Run the Program
 ```bash
-./hmm
+./model
 ```
 
 ## 📊 Model Configuration
@@ -120,7 +120,7 @@ double B[N][M] = { /* Custom emission probabilities */ };
 4. **Memory issues:** Reduce MAX_T for smaller datasets
 
 ### Performance Tips
-- Use optimized compiler flags: `gcc -O3 hmm.c -o hmm -lm`
+- Use optimized compiler flags: `gcc -O3 model.c -o model -lm`
 - For large datasets, consider increasing MAX_T
 - Monitor convergence by uncommenting debug prints
 
