@@ -6,11 +6,11 @@ This repository contains multiple approaches to stock price prediction, each imp
 
 ``` 
 StockPricePrediction/
-├── hmm/                    # Hidden Markov Model (C implementation)
+├── Hidden_markov_Model/    # Hidden Markov Model (C implementation)
 ├── transformer/            # Transformer Neural Network (Python/Keras)
-├── scripts/               # Multi-strategy Python scripts (LSTM, etc.)
-├── data/                  # Sample datasets and data utilities
-└── README.md             # This file
+├── scripts/                # Multi-strategy Python scripts (LSTM, etc.)
+├── data/                   # Sample datasets and data utilities
+└── README.md               # This file
 ```
 
 ## Approaches Overview
